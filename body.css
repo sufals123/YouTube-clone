@@ -1,0 +1,55 @@
+.body {
+    position: relative;
+    top: 73px;
+    left: 90px;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 25px;
+}
+
+.body > div {
+    width: 350px;
+    position: relative;
+}
+
+.body img {
+    width: 100%;
+    border-radius: 5px;
+    display: block;
+}
+
+.body .coding-music .time,
+.body .gym-music .time,
+.body .so-hard .time,
+.body .angel .time,
+.body .work .time,
+.body .the-end .time {
+    background-color: black;
+    color: white;
+    position: absolute;
+    top: 150px;
+    left: 300px;
+}
+
+.coding-music span,
+.gym-music span,
+.so-hard span,
+.angel span,
+.work span,
+.the-end span {
+    font-size: 20px;
+    font-weight: bolder;
+    display: block;
+    margin-top: 10px;
+}
+
+.coding-music p,
+.gym-music p,
+.so-hard p,
+.angel p,
+.work p,
+.the-end p {
+    font-size: 16px;
+    color: rgb(63, 62, 62);
+    margin-top: 10px;
+}

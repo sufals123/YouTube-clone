@@ -1,0 +1,133 @@
+.section-navBar {
+    width: 100vw;
+    height: 72px;
+    display: flex;
+    align-items: center;
+    border-bottom: 1px solid lightgray;
+    padding: 0 15px;
+    box-sizing: border-box;
+    position: fixed;
+    z-index: 1000;
+    background-color: white;
+}
+.first-column, .second-column, .third-column {
+    display: flex;
+    align-items: center;
+}
+.first-column {
+    flex: 1;
+    justify-content: flex-start;
+}
+.bars-log, .youTube-log {
+    font-size: 40px;
+    margin-right: 10px;
+}
+.youTube-text {
+    font-size: 19px;
+    font-weight: bolder;
+}
+
+.second-column {
+    flex: 2;
+    justify-content: center;
+    position: relative;
+}
+
+.input-bar {
+    display: flex;
+    align-items: center;
+    width: 600px;
+    position: relative;
+}
+
+.input-bar input {
+    width: 100%;
+    height: 50px;
+    font-size: 20px;
+    border-radius: 30px;
+    padding: 0 50px 0 15px;
+    box-sizing: border-box;
+    border: 1px solid #ccc;
+}
+
+.search-bar {
+    position: absolute;
+    right: 10px;
+    font-size: 25px;
+    cursor: pointer;
+    border-left: 1px solid black;
+    padding: 10px;
+}
+
+.microphone-bar {
+    width: 40px;
+    height: 40px;
+    margin-left: 20px;
+    font-size: 20px;
+    cursor: pointer;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    background-color: rgb(241, 233, 233);
+}
+.microphone-bar:hover {
+    background-color: #d6cbcb;
+}
+.third-column {
+    flex: 1;
+    justify-content: flex-end;
+}
+.third-column .bell-log{
+    font-size: 30px;
+    margin-right: 10px;
+    position: relative;
+}
+
+.third-column i, .third-column img {
+    margin-left: 20px;
+    cursor: pointer;
+    width: 40px;
+    border-radius: 50%;
+}
+@media (max-width: 768px) {
+    .second-column .input-bar {
+        width: 300px;
+    }
+
+    .third-column i, .third-column img {
+        margin-left: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    .first-column {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .second-column {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .second-column .input-bar {
+        width: 100%;
+        margin: 5px 0;
+    }
+
+    .third-column {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}
+@media (max-width: 400px) {
+    .first-column {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .first-column .youTube-text{
+        visibility: hidden;
+    }
+}

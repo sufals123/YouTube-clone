@@ -1,0 +1,27 @@
+.sideBar{
+    width: 72px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 5px 5px 10px lightblue;
+    position: relative;
+    top: 71px;
+    position: fixed;
+}
+.sideBar .box{
+    width: 69px;
+    height: 72px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    padding: 5px;
+}
+.sideBar .box:hover{
+    background-color:  rgb(242, 235, 235);
+    border-radius: 7px;
+    cursor: pointer;
+}
